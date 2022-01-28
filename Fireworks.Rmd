@@ -1,0 +1,19 @@
+---
+title: "Make fireworks package"
+author: "Annie Johansson"
+date: "1/28/2022"
+output: html_document
+---
+
+fireworks is a package that allows you to produce a plot that draws values from a random beta distribution and formats them to look like fireworks. 
+
+The user can change two parameters in the function "make_fireworks": 
+  1. (background) Which background color to have. This object can take on any color included in the base R colors. It should be formatted as a string character.
+  2. (n) How many colors of the rainbow that should be included in the colors of the fireworks.
+
+For example: 
+
+```{r, message = FALSE, warning = FALSE, error = FALSE}
+library(fireworks)
+make_fireworks(background = "midnightblue", n = 10)
+```
